@@ -28,12 +28,17 @@
     </style>
 </head>
 <body>
-    <h3>Job Tracker ✅</h3>
+    <h3>Job Tracker</h3>
     <input type="text" id="companyNameInput" placeholder="Company Name" autofocus>
     <select id="statusSelector">
         <option value="Applied" selected>Applied</option>
         <option value="Need to Apply">Need to Apply</option>
     </select>
+    <textarea id="jdInput" placeholder="Paste Job Description here..." rows="4" style="width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 6px; font-family: Arial, sans-serif; resize: vertical;"></textarea>
+    <div style="margin-bottom: 10px;">
+      <label for="resumeInput" style="font-size: 12px; color: #666; display: block; margin-bottom: 4px;">Resume used:</label>
+      <input type="file" id="resumeInput" style="font-size: 12px; width: 100%;">
+    </div>
     <button id="submitBtn">Save Job</button>
     <p id="statusMsg"></p>
     <script src="popup.js"></script>
