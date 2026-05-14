@@ -2,8 +2,21 @@
   "manifest_version": 3,
   "name": "Job Tracker",
   "version": "1.0",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "activeTab"],
+  "host_permissions": [
+    "https://script.google.com/*",
+    "https://script.googleusercontent.com/*"
+  ],
   "action": {
     "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J",
+        "mac": "Command+Shift+J"
+      },
+      "description": "Open the Job Tracker popup"
+    }
   }
 }
